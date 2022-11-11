@@ -1,0 +1,7 @@
+<p>I am child component</p>
+<h1>Parent transfer this {{ name }}</h1>
+
+<div>
+    <input type="text" placeholder="Write a title" #bookTitle>
+    <button (click)="onAddTitle(bookTitle.value)">Add Title</button>
+</div>

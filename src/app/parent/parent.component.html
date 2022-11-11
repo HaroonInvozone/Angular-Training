@@ -1,0 +1,11 @@
+<p>I am parent component.</p>
+<p>The data is transfer from the child component</p>
+<li *ngFor='let fav of favBooks;'>
+    <ul>{{ fav.title }}</ul>
+</li>
+<!-- <app-child [name]= 'name'></app-child> -->
+<hr>
+
+<app-child (bookTitleCreated)=onBookAdded($event)></app-child>
+<p>The data is transfer from the child component</p>
+
